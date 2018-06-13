@@ -1,0 +1,12 @@
+There are some pre-requisites to run this tool
+
+OS : Windows server 2016 or Windows 10 with latest updates
+
+'diskspd.exe', 'diskspd.xsd', 'Dynamo.exe', 'fio.exe', 'IOmeter.exe', 'PsExec64.exe', 'smartctl.exe', 'StorageTool.exe','config.json','TC-*.zip
+
+fio.exe : This is not the installer version
+smartctl.exe : This is not installer version
+config.json : where you can edit you setup configuration
+TC-*.zip : This is the kit you get from Microsoft
+
+
