@@ -7,8 +7,7 @@ from core.binaries_setup import binaries_setup
 from core.controller_setup import controller_files_setup
 from core.toolkit_setup import toolkit_files_setup
 from core.server_list_setup import create_server_list
-from __future__ import print_function
-#this is for end = " "
+
 
 
 GREETING_KEYWORDS = ("hello", "hi", "greetings", "sup", "what's up",)

@@ -1,5 +1,4 @@
 import os
-import pexpect
 import json
 def run_suite():
     # update OOB-validation.xls and smart-validation.xls
@@ -8,7 +7,8 @@ def run_suite():
 
     with open("C:\ToolkitUserFiles\config.json") as json_handler:
         data = json.load(json_handler)
-
+        OOB_SUPPORT = False
+        EDRIVE_SUPPORT = False
         if data["oob_support"] == "yes":
             OOB_SUPPORT = True
 
@@ -36,4 +36,4 @@ def run_suite():
     os.system("del " "C:\TestController\StartController.ps1")
     os.system("copy C:\ToolkitUserFiles\StartController.ps1 C:\TestController")
 
-    os.system("powershell -noexit \"C:\TestController\StartController.ps1 -Name " + suite + " -ServerList TestSystems -TestPlan 678123 -Shortsuite \"" + short_switch  )
+    os.system("powershell -noexit \"C:\TestController\StartController.ps1 -Name " + suite + " -ServerList TestSystems -TestPlan 678123 -Shortsuite \""  )

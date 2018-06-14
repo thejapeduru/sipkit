@@ -2,7 +2,7 @@ import json
 import os
 
 def create_server_list():
-
+    OOB_SUPPORT =False
     with open("C:\ToolkitUserFiles\config.json") as json_handler:
         data = json.load(json_handler)
 
