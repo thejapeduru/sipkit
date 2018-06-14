@@ -36,4 +36,4 @@ def run_suite():
     os.system("del " "C:\TestController\StartController.ps1")
     os.system("copy C:\ToolkitUserFiles\StartController.ps1 C:\TestController")
 
-    os.system("powershell -noexit \"C:\TestController\StartController.ps1 -Name " + suite + " -ServerList TestSystems -TestPlan 678123 -Shortsuite \""  )
+    os.system("powershell -noexit \"C:\TestController\StartController.ps1 -Name " + suite + " -ServerList TestSystems -TestPlan 678123 -Shortsuite $True\""  )
